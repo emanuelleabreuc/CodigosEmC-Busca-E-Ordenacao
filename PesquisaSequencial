@@ -1,0 +1,10 @@
+int PesquisaSequencial (int Elem, int V[], int tam) {
+    int i = 0;
+    while ((i < tam) && (V[i] < Elem)) 
+        i = i + 1;
+    
+    if ((i < tam) && (V[i] == Elem)) 
+        return i; // Elemento encontrado, retorna o índice
+    else 
+        return -1; // Elemento não encontrado, retorna -1
+}
